@@ -1,0 +1,100 @@
+One of the main functions of server side programming languages is to allow access to information stored in databases. Since this is not possible using HTML and JavaScript alone, it is necessary to use a language on the server side. Among the various languages available on the server side are Java, Python, ASP, .NET and PHP, which we will learn a little more about throughout this study.
+
+PHP
+PHP (Hypertext Preprocessor) is a script-based, open source programming language intended, above all, for web development. It is a language created to be simple, having been born structured and, later, adopting the object-oriented paradigm — just 10 years after its creation.
+
+post_add
+know more
+The main focus of PHP is server-side scripts, supporting functions such as collecting and processing data from HTML forms, generating dynamic content with access to databases, among others. In addition to focusing on server-side scripts, it is also possible to use PHP through command-line scripts and in the creation of desktop applications (using the PHP-GTK extension), although it is not the best language for this.
+
+How PHP works
+PHP is an interpreted language, meaning it needs to “run” on a web server. With this, all generated code is interpreted by the server, converted into HTML format and then displayed in the browser.
+
+Step 1: The generated PHP code is interpreted by the server.
+Step 2: This code is converted into HTML format.
+Step 3: The code is displayed in the browser.
+Therefore, the source code cannot be seen on the client side, but only the generated HTML.
+
+Another important feature of PHP is that it can be used on most operating systems, as well as on several different web servers, such as Apache, IIS and Nginx, among others.
+
+Anatomy of a PHP script
+A PHP script is composed of code delimited by <?php and ?> tags. The last one, closing, is not mandatory. Due to its simplicity, the same PHP script can contain both structured and object-oriented code. It may even contain HTML markup code. In the latter case, PHP's own code must be between the opening and closing tags. The following image shows two code examples, one just in PHP and the other mixed with HTML. When analyzing the codes, it is initially important to note that both have the “.php” extension. Other possible extensions, but currently disused, are “.php3”, “.php4”, “.phtml”.
+In the first code of the image, we have the tags of a common HTML file, with the exception of the code inserted within the <?php and ?> tags. Here we have the “echo” function, which is used to print something on the screen, associated with a sentence. When viewed in the browser, the code will be rendered as normal HTML. If we display the source, it will only be possible to see the HTML tags and the content, without the PHP code in question.
+
+In the second part of the image, we have a code example in which two variables are defined, $name and $email, which receive two values sent from an HTML form, through the POST method. Hence the use of the superglobal array $_POST — whose indexes ‘name’ and ‘email’ correspond to the ‘name’ attribute of the form’s input fields. Next, the “echo” function is used to print a sentence and the content of the variables received. Note the use, once again, of an HTML tag, <br/>, in the PHP code.
+
+Syntax
+Below is a summary of PHP syntax:
+In PHP, variables are created using the dollar sign ($). Furthermore, PHP is case sensitive, that is, it is sensitive to upper and lower case letters, as it makes a difference when we use one or the other.
+PHP is a weakly typed language. Therefore, although there is support for this, it is not necessary to define the type of a variable in its declaration. The data types available in PHP are: booleans, integers, floating point numbers, strings, arrays, iterables, objects, resources, NULL and call-backs.
+In PHP, ternary if, else, if and else, if else and switch conditionals are supported.
+
+In PHP, for, foreach, while and do-while loops are available.
+PHP code has a large number of native functions and methods.
+
+Inclusion of scripts within scripts
+PHP allows you to include a script within another script. This is very useful, especially if we think about the object-oriented paradigm, in which we have, in a program, several classes, encoded in different scripts. Therefore, whenever we need to make use of one of these classes, their methods or attributes, just include it in the desired script. To include a script in another, PHP provides some functions:
+
+Include
+Require
+Include once
+Require_once
+File system access
+Through PHP it is possible to access the web server's file system. With this, you can, for example, manipulate files and directories, from simple listing to inclusion or exclusion of data.
+Dynamic pages and data access
+Dynamic pages
+If we were to implement everything we have studied so far on a web page, we would have a basic HTML page, with a little interaction in the browser itself, thanks to JavaScript, and also with a little style, this due to CSS. Furthermore, we already know that it is possible to send data from HTML to PHP using a form. To proceed, it is important to define what dynamic pages are. The best way to do this, however, is by defining what would be its antonym, that is, static pages.
+
+HTML + JavaScript + CSS, without connection to a programming language, form what we can call static pages. Although it is even possible to have an entire website made up of static pages, this would be a lot of work and also unusual.
+
+But and now? What's the next level? What to do next? The answer to these questions lies in what we will cover next: dynamic pages and data access.
+
+extension
+Example
+Imagine a website that has, for example, ten pages. Now imagine that this website has the same visual structure, the same header, menu, footer and other common points. Think of a blog, for example, where what changes are the content of the posts. On the static website, we would have to write ten different HTML files, modifying the content in each of them, directly in the HTML tags, and we would only be able to reuse the styles and browser interactivity using external CSS and JavaScript. However, all content would need to be typed and a lot of HTML code repeated. All this work helps us understand what static pages are.
+
+Still using the example of a blog, imagine that you want to receive comments on your posts, you want your visitors to be able to interact with you and vice versa. How to do this? The answer, as you might already imagine, is: dynamic pages.
+
+The combination of client-side technologies and server-side technologies produces dynamic pages.
+
+In them, it is possible to receive information from the customer, process it, store it, retrieve it and use it whenever we wish. And that's not all: we can store all the content of our blog in the database. With this, we would only have a PHP page that would retrieve our content from the database and display it in the browser. The following table presents a small comparative summary between static and dynamic pages.
+
+Static pages Dynamic pages
+Inclusion/Change/Deletion of content Manually, directly in the HTML code Automatically through server-side scripts, such as PHP
+Content storage On the HTML page itself In a database
+Table: Comparison between static and dynamic pages.
+
+Alexandre Paixão
+
+Another important feature of a dynamic website is that it allows the use of content management tools (CMS) to keep the information on the website always up to date. Therefore, once ready, it will no longer be necessary to touch the source codes, simply access the tool and manage the content through it. On a static website, you will need to directly modify the HTML code, requiring someone with technical knowledge to do this.
+Data access
+
+As mentioned previously, the web environment is made up of technologies that run on the client side and server side. Complementing what we have seen so far, we also have, on the server side, the database. Briefly, we can define it as a repository in which various information can be stored and later retrieved.
+
+To manage this data, there are DBMS, or database management systems. If, on the one hand, the DBMS is responsible for setting up the database structure — among other functions —, on the other hand, to retrieve information stored in a database and display it on a web page, it is necessary to use a server-side language, such as PHP. In other words, it is not possible to access the database using just HTML or even JavaScript. It will always be necessary to use a server side language to access the data.
+
+
+Ways to access data
+Based on the technologies seen so far, there are some ways to access the data stored in a database.
+One of the most common ways to send and retrieve data from HTML is using forms. With them, it is possible to submit our data to a language on the server side/PHP. This then receives the information and stores it in the database. The opposite way happens in the same way. We can have a form on our HTML page that requests data from PHP and it sends it back, after retrieving it from the database.
+
+It's also worth remembering what we saw about PHP: it allows the use of HTML codes directly in your scripts. Therefore, a web page made in PHP can retrieve data from the database every time it is loaded. This is what happens on most websites. Each page viewed is composed of content stored in a database and HTML code produced by a server-side language. As a result, each page we open on dynamic websites involves a call/request to the server side — script and database.
+JavaScript essentially has two ways to communicate with server-side languages: through the APIs (Application Programming Interface) and Fetch API. The first is widely used, being the most common way to carry out this communication. It is usually associated with a web development technique called AJAX. The second is more recent and offers some improvements, although it is not supported by all browsers.
+
+Communication in both consists of, upon some event in the browser, normally originating in an action triggered by the user, a request is sent to the server side, such as retrieving some data, for example, processing its return and displaying it on the screen. All this without having to reload the entire page.
+
+BENYON, D. Interação humano-computador. São Paulo: Pearson Prentice Hall, 2011.
+
+STAT COUNTER GLOBAL STATS. Screen resolution stats Brazil. S. d.
+
+FRIEDMAN, V. Responsive web design: what it is and how to use it. Smashing Magazine, 11 ago. 2018. Consultado na internet em: 13 jun. 2022.
+
+MOZILLA. MDN web docs: CSS Preprocessor. S. d.
+
+PAIXÃO, A. Notas de aula sobre ambiente web cliente X servidor e as tecnologias do professor alexandre paixão. Disponível sob licença Creative Commons BR Atribuição – CC BY, 2020.
+
+SILVA, M. S. Web design responsivo: aprenda a criar sites que se adaptam automaticamente a qualquer dispositivo, desde desktop até telefones celulares. São Paulo: Novatec, 2014.
+
+WROBLEWSKI, L. Mobile first. S. d.
+
+W3SCHOOLS. CSS reference. S. d.
