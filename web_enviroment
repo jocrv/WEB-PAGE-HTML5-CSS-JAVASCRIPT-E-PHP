@@ -1,0 +1,43 @@
+The web environment and its client X server model, design interfaces
+responsive (mobile first approach) and adaptive, side technologies
+client (HTML, CSS, static pages with JavaScript) and side
+server (dynamic pages with PHP, database access).
+Understand the composition of the web environment and its components
+client and server sides, as well as the technologies inherent to each
+component, is essential for the training of professional
+web systems development.
+
+This model was created to solve some problems of the model
+above, including the need to reinstall/update the
+application to clients at each change in rule or logic. Then, it was
+An additional layer is included, the application layer. With this, the
+The responsibilities of each layer were divided as follows:
+Represented by the application installed on the client machine. It was
+responsible for the user interface and started to access the
+application server, losing direct access to the application server
+data. Represented by a server responsible for logic and
+business rules, as well as access control to the
+data server.
+
+Four-layer model
+The major advance achieved in this model was to take responsibility for the user interface away from the client machine, centralizing it at a single point, normally on a web server. With this, instead of applications installed on each client machine, we now have customers accessing applications hosted on web servers from browsers. In this model, the division of responsibilities was as follows:
+
+
+Client
+You now only need a browser to access the application.
+
+Server
+Consisting of three servers — applications, data and web, the latter being responsible for the presentation/interface with the client user.
+
+So far, we have seen that this environment is made up of:
+
+Uses a browser or application and consumes services hosted on a web server.
+
+Its structure can support both the presentation, application and data layers on a single machine or on several machines, with this distribution being indistinguishable for the customer.
+
+When we talk about communication, we are talking, more specifically, about how data travels between the request sent by a client and the response provided by a server.
+
+Communication in the web environment
+Communication, in this environment, is carried out over the internet, using its communication protocols, the main protocol being HTTP (HyperText Transfer Protocol), which is a protocol for transferring hypertext. In the following image, we can see an example of communication in the web environment.
+
+In the example presented, on one side we have the client who, with a desktop or smartphone, makes a request, via the internet, for a service — represented by the Listar-TV.php file — to a server. The web server, after processing the request, returns the requested information, represented by the Listagem-TV.php file. With this, we can understand how applications available in the web environment work, such as news websites, e-commerce, email, social networks, etc. In each of these cases, on one side there is a request being made by the client and, on the other, the server processing the request and responding to the client with what was requested.
