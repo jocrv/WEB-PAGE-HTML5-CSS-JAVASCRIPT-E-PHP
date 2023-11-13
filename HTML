@@ -1,0 +1,86 @@
+HTML
+HTML is considered the fundamental technology of the web, as its function is to define the structure of a web page. This markup language, created by Tim Berners-Lee in the 1990s, initially aimed to allow the dissemination of research between Lee and his fellow researchers, but it was quickly spread to form the network that later became the World Wide Web. as we currently know it.
+
+In general terms, HTML is a simple markup language, made up of elements, called tags, which are related to texts and other content in order to give them meaning. For example: we can mark a text as a paragraph, a list or a table. It is also possible to insert videos and images. Furthermore, we also use this markup to define the structure of a document in a logical way: 
+navigation menu, header, footer, etc. 
+Tags can be grouped into the following types: Together with the DocType definition element, as can be seen in the following image, they make up the mandatory structure of a web page.
+- Content
+Related to the type of content and the creation of sections to group it according to its function in the document. To better understand this concept, see the following image:
+
+
+Basic structural tags of a web page.
+
+As seen in the image shown, the < header >, < nav >, < main > and < footer > tags play a semantic role, as they structure the page into sections. As their names indicate, they separate content into logical parts that form the skeleton of most HTML pages, that is: header, navigation menu, main content and footer. 
+Therefore, paragraph tags, image tags, among others, are inserted within each of these sections, thus forming a complete HTML document.
+know more
+A complete listing of tags and attributes (used to add characteristics to a tag) can be found on the W3C website.
+
+HTML5
+The most recent version of HTML is 5, which brought some important improvements compared to the previous ones. Among these new features, the following stand out:
+CSS
+CSS corresponds to the second layer in the tripod of technologies that form the client side, in the web environment. It is a declarative language whose function is to control the visual presentation of web pages. With this, there is a separation of functions in relation to HTML.
+
+
+wb_incandescent
+Tip
+One takes care of the content, the structuring; the other takes care of the presentation, the layout.
+
+Syntax
+The CSS syntax consists of a declaration in which the element(s) and the style(s) we wish to apply to them are defined or, in other words:
+
+The selector
+An HTML element (body, div, p, etc.) or its identifier (ID attribute) or class (class attribute).
+
+The property
+Characteristic of the element (color, font, position, etc.).
+
+The value
+New parameter to be applied to the element characteristic.
+
+For example, to change the font color of text inserted in a paragraph, we could use one of the variations shown in the image below.
+
+
+Example of CSS application.
+
+In the example presented, we saw two ways to define the style of a paragraph tag. In the first, the element to which the style was applied was defined using its ID attribute. Regarding selectors, existing properties and more details about CSS, it is recommended to read the W3C Reference Guide.
+
+Client-side technologies: HTML5, CSS and JavaScript
+Now, learn about the differences between a structure in HTML and style sheets.
+How to insert CSS into the web page
+There are four ways to insert CSS into a document:
+
+Styles, in this case, are applied using the “style” attribute followed by one or more properties/values.
+Styles are defined using the <style> tag, within the <head> tag in the document.
+This is the preferred way to enter styles. It uses an external file, with the “.css” extension, containing only styles. To link this external file to the document, the <link> tag is used within the <head> tag.
+This form was introduced by HTML5. With it, a style can be defined at the scope level, that is, declared in specific sections of the document. Your statement is made in the same way as inline. However, instead of being declared in the <head>, it is declared within the tag to which you want to apply the styles.
+CSS Selectors
+CSS allows a series of combinations for applying styles. You can use simple applications, like the ones seen so far, in which only one element was selected, or more complex combinations, in which several elements can be grouped together to receive the same style.
+
+Good practices related to CSS
+
+It is good practice and strongly recommended to use the external form to include CSS in a web page. Among other advantages, such as better code organization, separating HTML from style, we must bear in mind that the same CSS file can be used on several pages of a website.
+
+extension
+Example
+Let's imagine the opposite situation: we have a website whose layout (top, footer and menu, for example) is common across all its pages – independent .html files. When using the inline and internal forms, we would need to replicate the same code on all pages. Imagine now having to make some change or inclusion, such an operation would need to be repeated countless times. On the other hand, if we use an external file and link it on every page, we will only need to work on a single code, 
+making it much easier to maintain and also considerably reducing our work.
+
+Another good practice, taking into account web page loading performance, is to compress the file — we normally call this process minification. There is software and even websites that do this job, which consists of, in short, reducing the spaces and lines in the .css file, thus reducing its final size.
+
+Other considerations about CSS
+A new feature has been gaining a lot of space lately when it comes to CSS: preprocessors, such as Sass, Less, Stylus, etc. In general terms, a preprocessor is a program that allows you to generate CSS from a syntax — specific to each preprocessor — which includes numerous facilities not naturally supported by CSS, such as variables, functions, nested rules, among others.
+JavaScript
+JavaScript completes the trio of web technologies that run on the client side. It is a programming language that, like CSS, is interpreted by the browser. Among its main characteristics, the fact that it is multi-paradigm (object-oriented, prototypes, functional, etc.) stands out.
+
+Its function is, above all, to provide interactivity to web pages, and it was created with the aim of reducing the need for requests to the server side, allowing asynchronous communication and content changes without having to reload an entire page.
+
+
+Syntax
+JavaScript is, at the same time, user-friendly, but also complete and powerful. Although created to be lightweight, as it is interpreted natively by browsers, it is a complete programming language and, as already mentioned, multi-paradigm. Therefore, your codes can be both structured and object-oriented. Additionally, they allow libraries such as Jquery, Prototype, etc. are created from its core, thus extending its functionality. Let’s look at some characteristics of this language:
+events and manipulation DOM:
+This language offers extensive support for handling events related to HTML elements. It is possible, for example, to use a < button > element that, when clicked, displays a message on the screen. Or increase the size of a font or decrease it.
+
+The flow of generating CSS through a preprocessor consists of writing code containing the rules to be applied, making use of the syntax of each preprocessor. In the end, this code will be compiled, generating normal CSS code.
+
+How to insert CSS into the web page
+JavaScript supports native functions for displaying dialog boxes for data entry or displaying messages, such as alerts, for example.
