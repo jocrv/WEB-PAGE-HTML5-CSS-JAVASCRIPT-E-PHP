@@ -41,3 +41,13 @@ Communication in the web environment
 Communication, in this environment, is carried out over the internet, using its communication protocols, the main protocol being HTTP (HyperText Transfer Protocol), which is a protocol for transferring hypertext. In the following image, we can see an example of communication in the web environment.
 
 In the example presented, on one side we have the client who, with a desktop or smartphone, makes a request, via the internet, for a service — represented by the Listar-TV.php file — to a server. The web server, after processing the request, returns the requested information, represented by the Listagem-TV.php file. With this, we can understand how applications available in the web environment work, such as news websites, e-commerce, email, social networks, etc. In each of these cases, on one side there is a request being made by the client and, on the other, the server processing the request and responding to the client with what was requested.
+Request and response
+The communication process in the web environment is known as request and response. Normally, the request is initiated by the client, but it is possible that the server also initiates it, as in PUSH services — services that trigger notifications/messages to clients who have chosen to receive them.
+
+
+Request and response process.
+
+Client side X Server side
+These two expressions are very common when we talk about applications running in the web environment. Both refer to technologies and codes available on the client side (in this case, the device used by a user to make a request) and on the server side.
+
+Regarding the responsibility for making requests in the client X server model, it is normally the client who initiates communication in the client X server model. However, the server side is also capable of performing this task.
