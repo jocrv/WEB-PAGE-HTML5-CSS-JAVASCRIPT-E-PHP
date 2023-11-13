@@ -1,0 +1,14 @@
+Structure web pages, using the HYPERTEXT MARKUP language (HTML 5),
+for the formation of a framework on which dynamic functionalities will be built;
+Apply style features to WEB pages using style markup language (CSS
+3), to practice software engineering techniques such as ease of understanding, reuse of
+code, maintainability and interoperability;
+Apply style features to WEB pages using style markup language (CSS
+3), to practice software engineering techniques such as ease of understanding, reuse of
+code, maintainability and interoperability;
+Employ programmability on web pages, using Javascript language, most used in
+market, for the development of a web system with dynamic functionalities;
+Employ programmability on web pages, using AJAX and PHP language, quite common in
+legacy systems, for the development of a web system with dynamic functionalities;
+Integrate a DBMS into a web system, based on the PHP language and the PDO class, so that the
+system is capable of handling masses of structured data.
