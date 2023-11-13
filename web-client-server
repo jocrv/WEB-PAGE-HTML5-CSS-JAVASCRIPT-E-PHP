@@ -1,0 +1,89 @@
+The concept of interface is linked to the area of Human-Computer Interaction (HCI), which can be summarized as the study of the interaction between people and computers. 
+In this context, the interface, often called user interface, is what provides the interaction between the human being and the computer. At the beginning of the use of computers, such interaction was carried out through the command line and, later, also through graphical interfaces (Graphical User Interface - GUI). 
+According to Morais (2014), in the beginning, the interaction was, in a way, primary, leaving the human being a little aside, as there was no in-depth study of these aspects.
+
+Thus, the focus of the interface study mainly involved hardware and software, and the human being simply had to adapt to the system created.
+
+Subsequently, with the advancement of technology and access to computers, and more recently to other devices, especially smartphones,
+the need to improve interaction has continually grown.
+The client-side interface
+As Silva (2014) explains, technological evolution has led to an increasing use of mobile devices that have the most varied screen sizes and functionalities.
+
+Regarding this variety in the characteristics of devices used as interfaces for accessing applications in the web environment, it is necessary to guarantee usability, that is, that systems are developed that are easy to use and learn, as well as flexible.
+In addition to this concept, and from a usability point of view, this must be aligned with the concept of responsive design, which should allow web pages and consequently web applications to respond to any device without loss of information on the part of the user. .
+
+The StatCounter Global Stats website maintains a series of data and statistics about devices, screen sizes, and other related information. 
+Regarding screen sizes, and considering the period from April 2019 to April 2020, we have the following data:
+
+The concept of responsive design:
+Responsive Design
+According to Knight (2011), responsive design is the approach that suggests that design and development should respond to the user's behavior and environment based on the screen size, platform and orientation of the device used.
+
+This definition, in practice, implies that the accessed web page/application must be capable of automatically responding to user preferences and, therefore, avoiding the need to build different versions of the same page/application for different types and sizes of devices.
+
+The origin of responsive design
+The concept of responsive design had its origins in Responsive Architectural Design. 
+This project states that a room or space should automatically adjust to the number and flow of people inside it. To this end, a combination of robotics and technology is used, such as: motion sensors; climate control systems with temperature and lighting adjustment; along with materials — structures that bend, flex and expand.
+
+In the same way that in Responsive Architectural Design, architects do not remake a room or space according to the number, flow and characteristics of its occupants, in the web environment we should not have to build a version of the same page according to the characteristics of your visitors. 
+This would also bring other costs, such as identifying a huge combination of screen sizes and technology, among other factors, to create the same number of corresponding pages.
+
+In practice, when we apply the concept of responsive design, we use a combination of techniques, such as fluid layouts, media query and scripts. Below we will look at each of these techniques in detail.
+
+Fluid layouts
+To understand the concept of fluid layout, it is necessary to first understand what its opposite would be, that is, the fixed layout.
+
+Fixed layout:
+The dimensions (width and height) of elements on a web page are defined using fixed measurement units, such as pixels (the smallest point that forms a digital image). As a result, such elements do not adapt to changes in the size of the field of view of the devices that view them.
+Fluid layout:
+Fluid layouts make use of flexible units — instead of defining dimensions using fixed quantities, flexible values are used. This allows, for example, that instead of defining the header of a page to be 1366 pixels wide, we can define it to occupy 90% of the screen size of the device that views it. 
+Hence the concept of fluid, that is, of adaptability to the field of vision according to the dimensions of the device viewing the page.
+In addition to percentage values, there are other flexible measurement units, for example:
+
+Typographic unit of measurement, being related to the letter “M”. The base size of this unit is equivalent to the width of the capital letter “M”.
+
+While EM is related to the size of the context element (that is, we define the EM value of an element based on its parent element), in REM we define that the context element, the parent element, will always be the HTML tag < body>. Hence the letter “R” in this unit, which refers to the root.
+Media query
+The presentation function, of structuring the layout of a page, in the web environment, is the responsibility of style sheets (CSS). We will discuss CSS in more depth throughout our study. For now, to define what media query is, we will also talk a little about CSS.
+
+Based on the statement that CSS is responsible for structuring the layout of a web page, we usually have one or more style sheets associated with a web page — which are codes that define aspects of the entire page, such as the dimensions of elements, colors of background, colors and font types etc.
+
+assignment_ind
+Comment
+In this context, media query is the use of media types from one or more expressions to define formatting for different devices. Using it, we can, for example, define that a certain style of one or more elements is applied only to devices whose maximum screen width is equal to or less than 600px.
+
+The following image shows a code fragment in which a media query is used to prevent a side menu (the HTML element whose class is equivalent to “menu_lateral”) from being displayed if the device screen width is less than 360px.
+
+The result of the expressions used in the media query can be true or false. In the case above, it will be true whenever the screen width of the device viewing the page is less than 360px. Otherwise, it will be false. In other words, for all devices whose screen width is greater than 360px, the CSS code in question will be ignored.
+
+report_problem
+Attention!
+Other expressions can be used, in addition to the one demonstrated above, such as defining the media type — that is, a style that applies only to one or more document types, such as the print version of a web page, for example — and the combination between value scales.
+Scripts
+
+When we talk about client-side scripts, in the web environment, we are talking about programming languages that run in the browser and the most common example of which is JavaScript.
+
+This language adds interaction to a web page, allowing, for example, dynamic content updating, multimedia control, image animation and much more. In the context of responsive design, its most important facet is dynamically updating content — and not just the content, but also its presentation.
+
+Responsive design vs. adaptive design
+The concept of adaptive design is often confused with that of responsive design. While the second, as seen previously, consists of using a combination of techniques to automatically adjust a website depending on the screen size of the devices used by users, in adaptive design static layouts based on breakpoints (or interruption points) are used. ), where, after the screen size is detected, an appropriate layout for it is loaded. Generally speaking, in adaptive design, layouts are created based on the six most common screen sizes. 
+The application of these two concepts in practice happens as follows:
+Media queries are used, in conjunction with scripts, to create a fluid layout that adapts — above all, by adapting the dimensions of its elements — to the screen size of the device used by the visitor.
+
+A website is planned and built with the definition of six predefined layouts, in which break points are provided so that the page adapts to the six different dimensions used.
+In short
+We could also say that responsive design is more complex, but more flexible. The adaptive one, more laborious, although less flexible.
+
+As stated, in responsive design it is necessary to create a series of media query combinations so that the layout adapts to the most varied screen sizes. In terms of adaptive, let's imagine a situation in which the following layouts and breaks were defined: 360px, 720px, 900px, 1080px, 1440px and 1800px. If the device's screen width is greater than 360px and less than 720px — for example, 700px —, the 360px layout will be loaded, which is practically half of it. It is possible to imagine that, in this case, the result is not very visually pleasing or optimized.
+
+Mobile first
+One of the most used responsive design approaches today is mobile first. This approach is centered on the growing use of mobile devices when browsing the web environment and advocates that design should first be thought of for smaller screens and, later, for larger screens. This is a progressive approach (progressive enhancement), in which we start with the resources and screen sizes available on smaller devices, progressing with the addition of resources and content with a view to larger screens and devices.
+
+From the definition of mobile first we can identify its counterpoint with traditional web development, in which we have the concept of graceful degradation:
+
+Web pages are designed with desktop devices and larger screens in mind and then adapted for mobile devices and smaller screens.
+
+The practical application of mobile first consists of planning the development of a website prioritizing the resources and characteristics present on mobile devices, such as screen size, available bandwidth and even specific resources, such as location, for example.
+
+
+
